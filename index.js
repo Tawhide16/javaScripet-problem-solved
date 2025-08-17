@@ -33,7 +33,7 @@ function countVowels(str) {
   return count;
 }
 
-console.log(countVowels("programming")); // Output: 3
+console.log(countVowels("programming")); 
 
 // const vowels = 'aeiouAEIOU';
 // 👉 সব ছোটহাত আর বড়হাত vowel গুলা একসাথে একটা string এ রাখছি।
@@ -49,3 +49,26 @@ console.log(countVowels("programming")); // Output: 3
 
 // শেষে return count;
 // 👉 সব ঘুইরা বের কইরা vowel এর সংখ্যা রিটার্ন করছে।
+
+//problem-3
+function isPalindrome(str) {
+  const reversed = str.split('').reverse().join('');
+  return str === reversed;
+}
+
+console.log(isPalindrome("madam")); 
+console.log(isPalindrome("hello"));
+
+// str.split('')
+// 👉 string টাকে character গুলায় ভাগ করি (array বানাই)।
+// Example: "madam" → ['m', 'a', 'd', 'a', 'm']
+
+// .reverse()
+// 👉 array টা উল্টায় ফেলি।
+// ['m', 'a', 'd', 'a', 'm'] → ['m', 'a', 'd', 'a', 'm'] (এই case এ same 😄)
+
+// .join('')
+// 👉 আবার string বানাই।
+// Output: "madam"
+
+//problem-4
